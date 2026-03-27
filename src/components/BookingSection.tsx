@@ -19,7 +19,7 @@ const BookingSection = () => {
   const sessions: Record<SessionType, SessionInfo> = {
     coaching: {
       icon: Target,
-      title: "Pro Coaching Session",
+      title: "Coaching Session",
       price: "$75",
       duration: "1 Hour",
       features: [
@@ -121,7 +121,7 @@ const BookingSection = () => {
                 Pick Your Time
               </h3>
               <p className="text-primary-foreground/60 mb-8 text-sm leading-relaxed">
-                Sessions are held at premier San Diego courts. Choose a time that works for you and let's get to work.
+                Sessions are held at San Diego courts. Choose a time that works for you and let's get to work.
               </p>
               <Button variant="cta" size="lg" className="text-base px-12 py-6">
                 Book Now — {current.price}

@@ -51,7 +51,7 @@ const pillars = [
   },
   {
     icon: Target,
-    label: "Pro Coaching",
+    label: "Coaching",
     title: "Master the Court",
     price: "$75/hr",
     description: "Private, high-performance coaching tailored to your mechanics and strategy.",
