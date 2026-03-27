@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Play, Target, Wrench, ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
 
@@ -45,7 +46,7 @@ const pillars = [
     title: "The Pickleball Pipeline",
     description: "Watch the latest gear breakdowns and local San Diego highlights.",
     cta: "Watch Now",
-    ctaLink: "#",
+    ctaLink: "/watch",
     hasExternal: true,
   },
   {
@@ -70,6 +71,7 @@ const pillars = [
 ];
 
 const ExpertiseSection = () => {
+  const navigate = useNavigate();
   return (
     <section id="expertise" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
@@ -110,6 +112,8 @@ const ExpertiseSection = () => {
                   onClick={() => {
                     if (pillar.ctaLink.startsWith("#")) {
                       document.getElementById(pillar.ctaLink.slice(1))?.scrollIntoView({ behavior: "smooth" });
+                    } else {
+                      navigate(pillar.ctaLink);
                     }
                   }}
                 >

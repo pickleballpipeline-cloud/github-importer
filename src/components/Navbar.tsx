@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Facebook, Instagram, Youtube } from "lucide-react";
+
+const socials = [
+  { icon: Facebook, label: "Facebook", url: "https://facebook.com" },
+  { icon: Instagram, label: "Instagram", url: "https://instagram.com" },
+  { icon: Youtube, label: "YouTube", url: "https://youtube.com" },
+];
 
 const links = [
   { label: "About", href: "#origin" },
@@ -37,6 +43,13 @@ const Navbar = () => {
               {l.label}
             </button>
           ))}
+          <div className="flex items-center gap-3">
+            {socials.map((s) => (
+              <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-lime transition-colors" aria-label={s.label}>
+                <s.icon className="w-4 h-4" />
+              </a>
+            ))}
+          </div>
           <Button variant="cta" size="sm" onClick={() => handleNav("#booking")}>
             Book Now
           </Button>
@@ -56,6 +69,13 @@ const Navbar = () => {
               {l.label}
             </button>
           ))}
+          <div className="flex items-center gap-4 pt-2">
+            {socials.map((s) => (
+              <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-lime transition-colors" aria-label={s.label}>
+                <s.icon className="w-5 h-5" />
+              </a>
+            ))}
+          </div>
           <Button variant="cta" className="w-full mt-4" onClick={() => handleNav("#booking")}>
             Book Now
           </Button>
