@@ -5,13 +5,42 @@ const OriginSection = () => {
   return (
     <section id="origin" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-          <div className="flex justify-center md:order-first">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+          <div className="flex flex-col gap-8">
             <img
               src={zachPhoto}
               alt="Zach Robson"
               className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-[3/4]"
             />
+            <div className="space-y-5">
+              {[
+                {
+                  icon: BookOpen,
+                  title: "Credentialed Educator",
+                  desc: "California-credentialed with years of structured teaching experience, bringing pedagogy to the court.",
+                },
+                {
+                  icon: Award,
+                  title: "Pro Coach & Consultant",
+                  desc: "Certified coaching backed by hands-on testing of 100+ paddles across every major brand.",
+                },
+                {
+                  icon: Compass,
+                  title: "San Diego Scene Builder",
+                  desc: "Embedded in the SD pickleball community — from court meetups to the latest local events.",
+                },
+              ].map((item) => (
+                <div key={item.title} className="flex gap-4 group">
+                  <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center shrink-0 group-hover:bg-lime transition-colors duration-500">
+                    <item.icon className="w-4 h-4 text-primary-foreground group-hover:text-accent-foreground transition-colors duration-500" />
+                  </div>
+                  <div>
+                    <h3 className="font-display font-bold text-foreground text-sm mb-0.5">{item.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div>
@@ -38,36 +67,6 @@ const OriginSection = () => {
                 See you on the courts.
               </p>
             </div>
-          </div>
-
-          <div className="space-y-6">
-            {[
-              {
-                icon: BookOpen,
-                title: "Credentialed Educator",
-                desc: "California-credentialed with years of structured teaching experience, bringing pedagogy to the court.",
-              },
-              {
-                icon: Award,
-                title: "Pro Coach & Consultant",
-                desc: "Certified coaching backed by hands-on testing of 100+ paddles across every major brand.",
-              },
-              {
-                icon: Compass,
-                title: "San Diego Scene Builder",
-                desc: "Embedded in the SD pickleball community — from court meetups to the latest local events.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="flex gap-5 group">
-                <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center shrink-0 group-hover:bg-lime transition-colors duration-500">
-                  <item.icon className="w-5 h-5 text-primary-foreground group-hover:text-accent-foreground transition-colors duration-500" />
-                </div>
-                <div>
-                  <h3 className="font-display font-bold text-foreground mb-1">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
