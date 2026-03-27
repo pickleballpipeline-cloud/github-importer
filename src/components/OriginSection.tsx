@@ -21,8 +21,8 @@ const OriginSection = () => {
                 },
                 {
                   icon: Award,
-                  title: "Pro Coach & Consultant",
-                  desc: "Certified coaching backed by hands-on testing of 100+ paddles across every major brand.",
+                  title: "Coach & Consultant",
+                  desc: "Certified coaching backed by hands-on testing of paddles across every major brand.",
                 },
                 {
                   icon: Compass,
