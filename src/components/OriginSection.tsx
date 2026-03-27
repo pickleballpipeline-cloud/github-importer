@@ -1,4 +1,3 @@
-import { Award, BookOpen, Compass } from "lucide-react";
 import zachPhoto from "@/assets/zach-robson.jpg";
 
 const OriginSection = () => {
@@ -12,35 +11,6 @@ const OriginSection = () => {
               alt="Zach Robson"
               className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-[3/4]"
             />
-            <div className="space-y-5">
-              {[
-                {
-                  icon: BookOpen,
-                  title: "Credentialed Educator",
-                  desc: "California-credentialed with years of structured teaching experience, bringing pedagogy to the court.",
-                },
-                {
-                  icon: Award,
-                  title: "Coach & Consultant",
-                  desc: "Certified coaching backed by hands-on testing of paddles across every major brand.",
-                },
-                {
-                  icon: Compass,
-                  title: "San Diego Scene Builder",
-                  desc: "Embedded in the SD pickleball community — from court meetups to the latest local events.",
-                },
-              ].map((item) => (
-                <div key={item.title} className="flex gap-4 group">
-                  <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center shrink-0 group-hover:bg-lime transition-colors duration-500">
-                    <item.icon className="w-4 h-4 text-primary-foreground group-hover:text-accent-foreground transition-colors duration-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-display font-bold text-foreground text-sm mb-0.5">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
 
           <div>
