@@ -62,7 +62,7 @@ const pillars = [
     label: "Paddle Consulting",
     title: "Tech Discovery",
     price: "$50/hr",
-    description: "Stop guessing and stop wasting money on the hype. For $50, access a massive inventory of the latest paddle technologies across all major brands.",
+    description: "Stop guessing and stop wasting money on the hype. Access an inventory of the latest paddle technologies across all major brands.",
     cta: "Book Fitting",
     ctaLink: "#booking",
     hasBlueprint: true,
