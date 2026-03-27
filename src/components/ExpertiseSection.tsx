@@ -45,7 +45,7 @@ const pillars = [
     title: "The Pickleball Pipeline",
     description: "Watch the latest gear breakdowns and local San Diego highlights.",
     cta: "Watch Now",
-    ctaLink: "#",
+    ctaLink: "/watch",
     hasExternal: true,
   },
   {
