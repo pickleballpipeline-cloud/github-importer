@@ -26,7 +26,7 @@ const HeroSection = () => {
             The Pickleball Pipeline
           </p>
           <h1 className="text-5xl md:text-7xl font-display font-bold text-primary-foreground leading-[1.05] mb-6">
-            Elevating Your Game.
+            <span className="text-lime">Elevating</span> Your Game.
             <br />
             <span className="text-lime">Connected</span> to the Court.
           </h1>
