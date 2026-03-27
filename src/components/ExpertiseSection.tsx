@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Play, Target, Wrench, ChevronDown, ChevronUp, ExternalLink, Facebook, Instagram, Youtube } from "lucide-react";
+import { Play, Target, Wrench, ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
 
 const PaddleConsultingDetail = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,19 +38,15 @@ const PaddleConsultingDetail = () => {
   );
 };
 
-const socialLinks = [
-  { icon: Facebook, label: "Facebook", url: "https://facebook.com" },
-  { icon: Instagram, label: "Instagram", url: "https://instagram.com" },
-  { icon: Youtube, label: "YouTube", url: "https://youtube.com" },
-];
-
 const pillars = [
   {
     icon: Play,
     label: "Content Creation",
     title: "The Pickleball Pipeline",
     description: "Watch the latest gear breakdowns and local San Diego highlights.",
-    hasSocials: true,
+    cta: "Watch Now",
+    ctaLink: "#",
+    hasExternal: true,
   },
   {
     icon: Target,
