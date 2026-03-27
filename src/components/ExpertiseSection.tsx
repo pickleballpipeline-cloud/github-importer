@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Play, Target, Wrench, ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
+import { Play, Target, Wrench, ChevronDown, ChevronUp, ExternalLink, Facebook, Instagram, Youtube } from "lucide-react";
 
 const PaddleConsultingDetail = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,15 +38,19 @@ const PaddleConsultingDetail = () => {
   );
 };
 
+const socialLinks = [
+  { icon: Facebook, label: "Facebook", url: "https://facebook.com" },
+  { icon: Instagram, label: "Instagram", url: "https://instagram.com" },
+  { icon: Youtube, label: "YouTube", url: "https://youtube.com" },
+];
+
 const pillars = [
   {
     icon: Play,
     label: "Content Creation",
     title: "The Pickleball Pipeline",
     description: "Watch the latest gear breakdowns and local San Diego highlights.",
-    cta: "Watch Now",
-    ctaLink: "#",
-    hasExternal: true,
+    hasSocials: true,
   },
   {
     icon: Target,
@@ -103,19 +107,37 @@ const ExpertiseSection = () => {
               </p>
               {pillar.hasBlueprint && <PaddleConsultingDetail />}
               <div className="mt-auto pt-4">
-                <Button
-                  variant={pillar.hasExternal ? "ctaOutline" : "cta"}
-                  size="sm"
-                  className="w-full"
-                  onClick={() => {
-                    if (pillar.ctaLink.startsWith("#")) {
-                      document.getElementById(pillar.ctaLink.slice(1))?.scrollIntoView({ behavior: "smooth" });
-                    }
-                  }}
-                >
-                  {pillar.cta}
-                  {pillar.hasExternal && <ExternalLink className="w-4 h-4 ml-1" />}
-                </Button>
+                {pillar.hasSocials ? (
+                  <div className="flex gap-3 w-full">
+                    {socialLinks.map((social) => (
+                      <a
+                        key={social.label}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1"
+                      >
+                        <Button variant="ctaOutline" size="sm" className="w-full gap-2">
+                          <social.icon className="w-4 h-4" />
+                          <span className="sr-only md:not-sr-only">{social.label}</span>
+                        </Button>
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <Button
+                    variant="cta"
+                    size="sm"
+                    className="w-full"
+                    onClick={() => {
+                      if (pillar.ctaLink?.startsWith("#")) {
+                        document.getElementById(pillar.ctaLink.slice(1))?.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
+                  >
+                    {pillar.cta}
+                  </Button>
+                )}
               </div>
             </div>
           ))}
