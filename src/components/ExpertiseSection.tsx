@@ -103,37 +103,19 @@ const ExpertiseSection = () => {
               </p>
               {pillar.hasBlueprint && <PaddleConsultingDetail />}
               <div className="mt-auto pt-4">
-                {pillar.hasSocials ? (
-                  <div className="flex gap-3 w-full">
-                    {socialLinks.map((social) => (
-                      <a
-                        key={social.label}
-                        href={social.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1"
-                      >
-                        <Button variant="ctaOutline" size="sm" className="w-full gap-2">
-                          <social.icon className="w-4 h-4" />
-                          <span className="sr-only md:not-sr-only">{social.label}</span>
-                        </Button>
-                      </a>
-                    ))}
-                  </div>
-                ) : (
-                  <Button
-                    variant="cta"
-                    size="sm"
-                    className="w-full"
-                    onClick={() => {
-                      if (pillar.ctaLink?.startsWith("#")) {
-                        document.getElementById(pillar.ctaLink.slice(1))?.scrollIntoView({ behavior: "smooth" });
-                      }
-                    }}
-                  >
-                    {pillar.cta}
-                  </Button>
-                )}
+                <Button
+                  variant={pillar.hasExternal ? "ctaOutline" : "cta"}
+                  size="sm"
+                  className="w-full"
+                  onClick={() => {
+                    if (pillar.ctaLink.startsWith("#")) {
+                      document.getElementById(pillar.ctaLink.slice(1))?.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {pillar.cta}
+                  {pillar.hasExternal && <ExternalLink className="w-4 h-4 ml-1" />}
+                </Button>
               </div>
             </div>
           ))}
