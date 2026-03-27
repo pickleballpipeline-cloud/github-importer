@@ -1,5 +1,4 @@
 import zachPhoto from "@/assets/zach-robson.jpg";
-import zachPhoto from "@/assets/zach-robson.jpg";
 
 const OriginSection = () => {
   return (
