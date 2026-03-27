@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 import { Menu, X } from "lucide-react";
 
 const links = [
@@ -25,8 +26,8 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-navy-deep/95 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
       <div className="container mx-auto px-6 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-display font-bold text-lg text-primary-foreground tracking-tight">
-          ZACH<span className="text-lime">.</span>ROBSON
+        <a href="#" className="flex items-center gap-2">
+          <img src={logo} alt="The Pickleball Pipeline" className="h-10 md:h-12 w-auto" />
         </a>
 
         {/* Desktop */}
