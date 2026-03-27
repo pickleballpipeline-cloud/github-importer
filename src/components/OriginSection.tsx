@@ -44,6 +44,31 @@ const OriginSection = () => {
           </div>
 
           <div>
+            <p className="text-lime font-display font-semibold text-sm tracking-[0.2em] uppercase mb-3">
+              The Origin Story
+            </p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
+              Connection & Adventure on Every Court
+            </h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                I'm Zach Robson. I didn't start my career in a pro shop; my background is actually in education.
+              </p>
+              <p>
+                Earning my teaching credential taught me how to break down complex concepts into actionable steps. Eventually, I realized that the exact same skills apply to the pickleball court. Whether it's deconstructing the mechanics of a third-shot drop or explaining how the swing weight of a Gen 4 paddle affects your elbow, teaching is at the core of everything I do.
+              </p>
+              <p>
+                I started <span className="text-foreground font-semibold">The Pickleball Pipeline</span> because I am deeply invested in the San Diego scene. From playing in local leagues to grinding in tournaments, I saw a massive gap: players were buying $300 paddles based on internet hype rather than a personal fit, and they were hitting plateaus because they didn't have someone to break down their mechanics.
+              </p>
+              <p>
+                The Pipeline was built to change that. It's a space to connect the community and explore the adventure of the sport. Whether I'm behind the camera profiling a local rising star, dialing in your gear with a custom paddle/gear fitting, or working one-on-one with you on the court, my goal is straightforward: I want to help you understand your game, find the right tools, and have a great time doing it.
+              </p>
+              <p>
+                See you on the courts.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
