@@ -3,10 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Services", href: "#expertise" },
-  { label: "Booking", href: "#booking" },
   { label: "About", href: "#origin" },
-  { label: "Community", href: "#community" },
+  { label: "Services", href: "#expertise" },
 ];
 
 const Navbar = () => {
