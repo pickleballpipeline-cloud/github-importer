@@ -5,7 +5,7 @@ import { Menu, X, Instagram, Youtube } from "lucide-react";
 
 const socials = [
   { icon: Instagram, label: "Instagram", url: "https://www.instagram.com/thepickleballpipeline/" },
-  { icon: Youtube, label: "YouTube", url: "https://www.youtube.com/" },
+  { icon: Youtube, label: "YouTube", url: "https://www.youtube.com/channel/thepickleballpipeline" },
 ];
 
 const links = [

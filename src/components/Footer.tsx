@@ -3,7 +3,7 @@ import logo from "@/assets/logo.png";
 
 const socials = [
   { icon: Instagram, label: "Instagram", url: "https://www.instagram.com/thepickleballpipeline/" },
-  { icon: Youtube, label: "YouTube", url: "https://www.youtube.com/" },
+  { icon: Youtube, label: "YouTube", url: "https://www.youtube.com/channel/thepickleballpipeline" },
 ];
 
 const Footer = () => (
