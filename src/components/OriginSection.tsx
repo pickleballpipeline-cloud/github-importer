@@ -8,7 +8,7 @@ const OriginSection = () => {
           <div className="flex flex-col gap-8">
             <img
               src={zachPhoto}
-              alt="Zach Robson"
+              alt="Zach"
               className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-[3/4]"
             />
           </div>
@@ -22,7 +22,7 @@ const OriginSection = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm Zach Robson. I didn't start my career in a pro shop; my background is actually in education.
+                I'm Zach. I didn't start my career in a pro shop; my background is actually in education.
               </p>
               <p>
                 Earning my teaching credential taught me how to break down complex concepts into actionable steps. Eventually, I realized that the exact same skills apply to the pickleball court. Whether it's deconstructing the mechanics of a third-shot drop or explaining how the swing weight of a Gen 4 paddle affects your elbow, teaching is at the core of everything I do.
