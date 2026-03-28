@@ -15,7 +15,7 @@ const channels = [
   {
     icon: Instagram,
     label: "Instagram",
-    url: "https://instagram.com",
+    url: "https://www.instagram.com/thepickleballpipeline/",
     description: "Behind-the-scenes content, drills, and SD pickleball culture.",
     color: "hover:text-pink-500",
   },
