@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Zach Robson coaching on a San Diego pickleball court at golden hour"
+          alt="Zach coaching on a San Diego pickleball court at golden hour"
           className="w-full h-full object-cover"
           width={1920}
           height={1080}
