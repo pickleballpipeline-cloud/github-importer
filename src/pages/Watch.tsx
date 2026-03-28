@@ -8,7 +8,7 @@ const channels = [
   {
     icon: Youtube,
     label: "YouTube",
-    url: "https://www.youtube.com/@ThePickleballPipeline",
+    url: "https://www.youtube.com/",
     description: "Gear breakdowns, paddle reviews, and on-court tutorials.",
     color: "hover:text-red-500",
   },
