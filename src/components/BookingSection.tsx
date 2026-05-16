@@ -44,6 +44,11 @@ const BookingSection = () => {
     },
   };
 
+  const calendlyUrls: Record<SessionType, string> = {
+    coaching: "https://calendly.com/pickleballpipeline/30min",
+    consulting: "https://calendly.com/pickleballpipeline/gear-consulting",
+  };
+
   const current = sessions[selected];
 
   return (
@@ -123,8 +128,10 @@ const BookingSection = () => {
               <p className="text-primary-foreground/60 mb-8 text-sm leading-relaxed">
                 Sessions are held at San Diego courts. Choose a time that works for you and let's get to work.
               </p>
-              <Button variant="cta" size="lg" className="text-base px-12 py-6">
-                Book Now — {current.price}
+              <Button asChild variant="cta" size="lg" className="text-base px-12 py-6">
+                <a href={calendlyUrls[selected]} target="_blank" rel="noopener noreferrer">
+                  Book Now — {current.price}
+                </a>
               </Button>
               <p className="text-primary-foreground/40 text-xs mt-4">
                 Powered by your preferred scheduling platform
