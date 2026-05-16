@@ -134,7 +134,7 @@ const BookingSection = () => {
                 </a>
               </Button>
               <p className="text-primary-foreground/40 text-xs mt-4">
-                Powered by your preferred scheduling platform
+                24-hour cancellation policy applies.
               </p>
             </div>
           </div>
