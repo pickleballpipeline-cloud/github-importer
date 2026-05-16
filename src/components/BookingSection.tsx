@@ -20,8 +20,8 @@ const BookingSection = () => {
     coaching: {
       icon: Target,
       title: "Coaching Session",
-      price: "$75",
-      duration: "1 Hour",
+      price: "$100",
+      duration: "1 Hour (1–4 players)",
       features: [
         "Personalized mechanics analysis",
         "Strategic game plan development",
@@ -32,8 +32,8 @@ const BookingSection = () => {
     consulting: {
       icon: Wrench,
       title: "Paddle Consulting Session",
-      price: "$50",
-      duration: "1 Hour",
+      price: "$100",
+      duration: "1 Hour (1–4 players)",
       features: [
         "Full paddle technology audit",
         "Side-by-side shape & gen testing",
@@ -75,7 +75,7 @@ const BookingSection = () => {
                 }`}
               >
                 <Target className="w-4 h-4 inline mr-2" />
-                Coaching — $75/hr
+                Coaching — $100
               </button>
               <button
                 onClick={() => setSelected("consulting")}
@@ -86,7 +86,7 @@ const BookingSection = () => {
                 }`}
               >
                 <Wrench className="w-4 h-4 inline mr-2" />
-                Paddle Fitting — $50/hr
+                Paddle Fitting — $100
               </button>
             </div>
           </div>
