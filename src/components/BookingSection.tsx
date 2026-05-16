@@ -44,6 +44,11 @@ const BookingSection = () => {
     },
   };
 
+  const calendlyUrls: Record<SessionType, string> = {
+    coaching: "https://calendly.com/pickleballpipeline/30min",
+    consulting: "https://calendly.com/pickleballpipeline/gear-consulting",
+  };
+
   const current = sessions[selected];
 
   return (
