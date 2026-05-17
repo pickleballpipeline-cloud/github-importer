@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, Target, Wrench, CheckCircle2 } from "lucide-react";
+import { Calendar, Clock, Target, Wrench, CheckCircle2, MapPin } from "lucide-react";
 
 interface SessionInfo {
   icon: React.ComponentType<{ className?: string }>;
