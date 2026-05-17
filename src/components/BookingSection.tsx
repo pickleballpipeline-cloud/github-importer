@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, Target, Wrench, CheckCircle2 } from "lucide-react";
+import { Calendar, Clock, Target, Wrench, CheckCircle2, MapPin } from "lucide-react";
 
 interface SessionInfo {
   icon: React.ComponentType<{ className?: string }>;
@@ -125,9 +125,13 @@ const BookingSection = () => {
               <h3 className="text-2xl font-display font-bold text-primary-foreground mb-3">
                 Pick Your Time
               </h3>
-              <p className="text-primary-foreground/60 mb-8 text-sm leading-relaxed">
-                Sessions are held at San Diego courts. Choose a time that works for you and let's get to work.
+              <p className="text-primary-foreground/60 mb-6 text-sm leading-relaxed">
+                Sessions are held at <span className="text-primary-foreground font-semibold">Pacific Highlands Ranch Rec Center</span> in San Diego — unless you have a private court you'd like to meet at instead.
               </p>
+              <div className="flex items-center justify-center md:justify-start gap-2 text-primary-foreground/50 text-xs mb-8">
+                <MapPin className="w-3.5 h-3.5 text-lime" />
+                <span>Pacific Highlands Ranch Rec Center · San Diego, CA</span>
+              </div>
               <Button asChild variant="cta" size="lg" className="text-base px-12 py-6">
                 <a href={calendlyUrls[selected]} target="_blank" rel="noopener noreferrer">
                   Book Now — {current.price}
