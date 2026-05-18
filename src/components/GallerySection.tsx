@@ -1,9 +1,11 @@
-import actionStretch from "@/assets/photo-action-stretch.jpg";
+import dinkReturn from "@/assets/photo-dink-return.jpg";
 import postMatch from "@/assets/photo-post-match.jpg";
+import paddleTap from "@/assets/photo-paddle-tap.jpg";
 
 const photos = [
-  { src: actionStretch, alt: "Zach stretching for a forehand at the kitchen line" },
+  { src: dinkReturn, alt: "Zach returning a dink at the kitchen line" },
   { src: postMatch, alt: "Zach and a student smiling after a session" },
+  { src: paddleTap, alt: "Zach tapping paddles with players at the net" },
 ];
 
 const GallerySection = () => (
@@ -18,18 +20,16 @@ const GallerySection = () => (
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {photos.map((p) => (
           <div
             key={p.src}
-            className="group relative overflow-hidden rounded-2xl aspect-[4/3] border border-border"
+            className="group relative overflow-hidden rounded-2xl aspect-[3/4] border border-border"
           >
             <img
               src={p.src}
               alt={p.alt}
               loading="lazy"
-              width={1280}
-              height={832}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
