@@ -24,7 +24,7 @@ const GallerySection = () => (
         {photos.map((p) => (
           <div
             key={p.src}
-            className="group relative overflow-hidden rounded-2xl aspect-[3/4] border border-border"
+            className="group relative overflow-hidden rounded-2xl aspect-[4/3] border border-border"
           >
             <img
               src={p.src}
