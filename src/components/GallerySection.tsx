@@ -1,11 +1,13 @@
 import actionStretch from "@/assets/photo-action-stretch.jpg";
 import postMatch from "@/assets/photo-post-match.jpg";
 import tournamentMedals from "@/assets/photo-tournament-medals.jpg";
+import gymPaddle from "@/assets/photo-gym-paddle.jpg";
 
 const photos = [
   { src: actionStretch, alt: "Zach stretching for a forehand at the kitchen line" },
   { src: tournamentMedals, alt: "Zach with tournament medal on court" },
   { src: postMatch, alt: "Zach and a student smiling after a session" },
+  { src: gymPaddle, alt: "Zach demonstrating paddle technique at an indoor clinic" },
 ];
 
 const GallerySection = () => (
