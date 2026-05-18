@@ -1,11 +1,11 @@
-import actionVolley from "@/assets/action-volley.jpg";
-import actionServe from "@/assets/action-serve.jpg";
-import actionCoaching from "@/assets/action-coaching.jpg";
+import actionStretch from "@/assets/photo-action-stretch.jpg";
+import postMatch from "@/assets/photo-post-match.jpg";
+import tournamentMedals from "@/assets/photo-tournament-medals.jpg";
 
 const photos = [
-  { src: actionVolley, alt: "Player driving a forehand at the kitchen line" },
-  { src: actionServe, alt: "Pickleball serve at golden hour" },
-  { src: actionCoaching, alt: "Coach demonstrating paddle grip on court" },
+  { src: actionStretch, alt: "Zach stretching for a forehand at the kitchen line" },
+  { src: tournamentMedals, alt: "Zach with tournament medal on court" },
+  { src: postMatch, alt: "Zach and a student smiling after a session" },
 ];
 
 const GallerySection = () => (
